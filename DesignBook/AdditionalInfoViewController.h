@@ -34,6 +34,9 @@
 
 -( IBAction )activityPushed:(id)sender;
 
+-( IBAction )startedEditing:(id)sender;
+-( IBAction )finishedEditing:(id)sender;
+
 @end
 
 @protocol AdditionalInfoViewDelegate <NSObject>
@@ -41,8 +44,5 @@
 -( CGRect )getMatchFrame;
 -( void )attachView:( UIView* )view;
 -( void )finished;
-
--( IBAction )startedEditing:(id)sender;
--( IBAction )finishedEditing:(id)sender;
 
 @end
